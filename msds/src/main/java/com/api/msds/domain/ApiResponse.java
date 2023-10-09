@@ -9,22 +9,22 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ResultVo<T> {
+public class ApiResponse<T> {
 	
 	private int code;
 	private String message;
 	private List<T> list;
 	
-	public ResultVo(String message) {
+	public ApiResponse(String message) {
 		this.message = message;
 	}
 	
-	public ResultVo(int code, String message) {
+	public ApiResponse(int code, String message) {
 		this.code = code;
 		this.message = message;
 	}
 	
-	public ResultVo(List<T> list) {
+	public ApiResponse(List<T> list) {
 		this.list = list;
 	}
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.api.msds.persistence.BoardMapper">
+<mapper namespace="com.api.msds.mapper.BoardMapper">
 	<insert id="insertBoard" parameterType="BoardVo">
 		INSERT INTO board(title, content)
          VALUES(#{title}, #{content})

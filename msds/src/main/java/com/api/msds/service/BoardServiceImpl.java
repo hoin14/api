@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.api.msds.domain.BoardVo;
-import com.api.msds.persistence.BoardMapper;
+import com.api.msds.mapper.BoardMapper;
 
 import lombok.RequiredArgsConstructor;
 
